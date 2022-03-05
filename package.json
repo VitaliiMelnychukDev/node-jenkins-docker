@@ -9,16 +9,8 @@
     "start:dev": "nodemon index.js",
     "lint": "eslint *",
     "prettier": "prettier --check *",
-    "prettier:fix": "prettier --write *"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged",
-      "pre-push": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "*.js": ["tslint", "prettier --write", "git add"]
+    "prettier:fix": "prettier --write *",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
