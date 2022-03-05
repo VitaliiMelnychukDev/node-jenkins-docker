@@ -13,8 +13,12 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run lint"
+      "pre-commit": "lint-staged",
+      "pre-push": "lint-staged"
     }
+  },
+  "lint-staged": {
+    "*.js": ["tslint", "prettier --write", "git add"]
   },
   "repository": {
     "type": "git",
