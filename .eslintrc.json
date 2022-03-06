@@ -18,6 +18,5 @@
       }
     ]
   },
-  "plugins": ["prettier"],
-  "ignorePatterns": ["*.json", "Jenkinsfile"]
+  "plugins": ["prettier"]
 }
