@@ -13,6 +13,11 @@ pipeline {
                 sh 'npm run test'
             }
         }
+        stage('Prettier') {
+            steps {
+                sh 'npm run prettier'
+            }
+        }
         stage('Linting') {
             steps {
                 sh 'npm run lint'
