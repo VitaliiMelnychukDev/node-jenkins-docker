@@ -1,7 +1,7 @@
 const assert = require('assert');
 
 describe('Simple Math Test', () => {
-  it('should return 2', () => {
+  it('should return 4', () => {
     assert.equal(1 + 3, 4);
   });
   it('should return 9', () => {
