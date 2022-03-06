@@ -2,4 +2,5 @@
 /.husky
 .gitignore
 .prettierignore
+.eslintignore
 Jenkinsfile
