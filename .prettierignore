@@ -2,3 +2,4 @@
 /.husky
 .gitignore
 .prettierignore
+Jenkinsfile

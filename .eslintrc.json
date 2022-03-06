@@ -19,5 +19,5 @@
     ]
   },
   "plugins": ["prettier"],
-  "ignorePatterns": ["node_modules", "*.json"]
+  "ignorePatterns": ["node_modules", "*.json", "Jenkinsfile"]
 }
