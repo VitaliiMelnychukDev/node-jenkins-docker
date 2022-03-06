@@ -3,10 +3,21 @@ pipeline {
         docker { image 'node:17-alpine3.14' }
     }
     stages {
+        stage('Installation') {
+            steps {
+                sh 'npm install'
+            }
+        }
         stage('Test') {
             steps {
-                sh 'node --version'
+                sh 'npm run test'
+            }
+        }
+        stage('Linting') {
+            steps {
+                sh 'npm run lint'
             }
         }
     }
+
 }
